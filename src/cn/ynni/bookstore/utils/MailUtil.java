@@ -62,7 +62,7 @@ public class MailUtil implements Runnable {
 			// 2.4设置邮件内容
 			String content = 
 					"<html><head></head><body><h1>这是一封激活邮件,激活请点击以下链接</h1><h3><a href='http://114.116.156.29:8080/bookstore/doActive?code="
-					+ code + "'>http://114.116.156.29:8080/bookstore/doActive?code=" + code
+					+ code + "'>http://主机名:8080/bookstore/doActive?code=" + code
 					+ "</href></h3></body></html>";
 			message.setContent(content, "text/html;charset=UTF-8");
 
