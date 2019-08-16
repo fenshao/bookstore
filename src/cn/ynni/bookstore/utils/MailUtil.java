@@ -46,14 +46,14 @@ public class MailUtil implements Runnable {
 			// 1.获取默认session对象（创建连接对象，连接到邮箱服务器）
 			Session session = Session.getDefaultInstance(properties, new Authenticator() {
 				public PasswordAuthentication getPasswordAuthentication() {
-					return new PasswordAuthentication("2501734853@qq.com", "gophnbmrffwwebgi"); // 发件人邮箱账号、密码
+					return new PasswordAuthentication("XXXXXXX@qq.com", "密码"); // 发件人邮箱账号、密码
 				}
 			});
 
 			// 2.创建邮件对象
 			Message message = new MimeMessage(session);
 			// 2.1设置发件人
-			message.setFrom(new InternetAddress("2501734853@qq.com"));
+			message.setFrom(new InternetAddress("XXXXXXXX@qq.com"));
 			// 2.2设置接收人
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
 			// 2.3设置邮件主题
